@@ -1,0 +1,17 @@
+{
+  "particle_count": 8192,
+  "realization_count": 5000,
+  "box_length_mpc_over_h": 4000.0,
+  "batch_size": 128,
+  "seed": 20260916,
+  "initial_scale_factor": 0.02,
+  "maximum_delta_sqrt_scale_factor": 0.001,
+  "omega_matter": 0.3158,
+  "omega_lambda": 0.6842,
+  "hubble_constant_km_s_mpc": 67.32,
+  "maximum_initialized_wavenumber_h_over_mpc": null,
+  "redshifts": [10.0, 5.0, 2.0, 1.0, 0.0],
+  "radial_min_mpc_over_h": 60.0,
+  "radial_max_mpc_over_h": 136.0,
+  "radial_bin_width_mpc_over_h": 2.0
+}
