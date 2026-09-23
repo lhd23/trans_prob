@@ -1,6 +1,11 @@
-# trans_prob
+<p align="center">
+  <img src="docs/transitions_N5000_R200_L1000_transition.gif"
+       alt="Transition probability animation"
+       width="700">
+</p>
 
-One-dimensional cosmological particle simulations with 1LPT initial conditions.
+Code to compute transition probabilities from a
+1D cosmological N-body simulation with 1LPT initial conditions.
 
 ## Run
 
