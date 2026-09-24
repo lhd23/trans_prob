@@ -24,11 +24,6 @@ python run.py peak
 * **peak:** runs another set of simulations to measure the evolution of the correlation
   function at five redshifts. Does not save transition pairs or full snapshots.
 
-Both use the supplied Planck 2018 power spectrum table, growing-mode momenta,
-the exact periodic rank-ordered force, and the same scale-factor-integrated
-kick-drift-kick integrator. Positions are comoving; each equal-mass particle
-represents a planar slab. No force softening in this one-dimensional simulation.
-
 Change the settings file in `configs/` for different separations, bins, times, etc.
 
 To remake figures without simulating:
