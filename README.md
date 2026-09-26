@@ -6,7 +6,8 @@
 
 Code to estimate the two-particle transition probabilities from a
 1D cosmological N-body simulation with 1LPT initial conditions.
-See arxiv:xxxx for paper.
+This code was used to obtain the results described in
+[arXiv:2609.30251](https://arxiv.org/abs/2609.30251).
 
 ## Run
 
