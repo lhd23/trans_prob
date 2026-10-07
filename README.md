@@ -1,7 +1,6 @@
 <p align="center">
   <img src="docs/transitions_N5000_R200_L1000_S72_transition.gif"
-       alt="Transition probability animation"
-       width="700">
+       alt="Transition probability animation">
 </p>
 
 Code to estimate the two-particle transition probabilities from a
