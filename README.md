@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/transitions_N5000_R200_L1000_transition.gif"
+  <img src="docs/transitions_N5000_R200_L1000_S72_transition.gif"
        alt="Transition probability animation"
        width="700">
 </p>
@@ -27,6 +27,20 @@ python run.py peak
 
 Change the settings file in `configs/` for different separations, bins, times, etc.
 
+For the smoother transition animation, save 72 logarithmically spaced snapshots
+between a=0.02 and a=10 in a separate run directory:
+
+```sh
+python src/simulate_transitions.py --config configs/transitions_72.json --output-directory data/transitions_N5000_R200_L1000_S72
+python src/analyse.py data/transitions_N5000_R200_L1000_S72 --trajectory-max-scale-factor 10
+python plots/animate_transitions.py data/transitions_N5000_R200_L1000_S72 docs/transitions_N5000_R200_L1000_S72_transition.gif
+```
+
+The animation retains the original dimensions and a four-second loop, with an
+average of 18 frames per second. Rendering additionally requires Matplotlib
+and Pillow. The 72-snapshot settings omit the four extra histogram times, so
+this run is intended for animation rather than the fixed-time histogram figure.
+
 To remake figures without simulating:
 
 ```sh
@@ -49,4 +63,3 @@ Selection uses the actual initial Eulerian positions **after displacement**.
 Every oriented non-self pair in `[q-width/2, q+width/2)` is followed by its
 original particle labels through all crossings. Later separations use the
 signed periodic interval `[-L/2, L/2)`.
-
